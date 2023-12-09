@@ -1,8 +1,23 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
 body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	font-family: 'Wendy One', sans-serif;
-	background-image: url("http://www.planwallpaper.com/static/images/vladstudio-squares-Cool-Background.jpg");
 	background-position: right center;
 	background-size: 100%;
+	background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+	border: 5px solid rgb(161, 139, 139);
+	margin: 10px;
+	border-radius: 20px;
 }
 
 span {
@@ -131,7 +146,7 @@ span {
 }
 
 span {
-	font-size: 4.8em;
+	font-size: 5rem;
 	color: white;
 	position: relative;
 	top: 30px;
@@ -307,10 +322,50 @@ transform: translate(-15px, 10px) rotate(10deg);
 }
 }
 
-h1 {
-	position: relative;
-	top: 200px;
-	text-align: center;
-	color: rgb(70, 28, 224);
-	font-size: 3.5em;
+.imagem{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5rem;
 }
+
+img{
+	width: 450px;
+	border-radius: 50%;
+	border: 5px solid white;
+}
+
+
+h1 {
+	font-size: 5rem;
+	text-align: center;
+	animation: colorChange 4s infinite;
+	/*animation: bounce 1s infinite;*/
+  }
+
+  @keyframes colorChange {
+	0%, 100% {
+	  color: #e74c3c; /* Vermelho */
+	}
+	25% {
+	  color: #f39c12; /* Laranja */
+	}
+	50% {
+	  color: #2ecc71; /* Verde */
+	}
+	75% {
+	  color: #3498db; /* Azul */
+	}
+  }
+
+  /*@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+	  transform: translateY(0);
+	}
+	40% {
+	  transform: translateY(-20px);
+	}
+	60% {
+	  transform: translateY(-10px);
+	}
+  }*/
